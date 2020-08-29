@@ -68,6 +68,7 @@ enum MyStatus {
   kOnHold,
   kDropped,
   kPlanToWatch,
+  kForgotten,
   kMyStatusLast
 };
 

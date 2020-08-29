@@ -1014,6 +1014,7 @@ std::wstring TranslateMyStatus(int value, bool add_count) {
     case kOnHold: return L"On hold" + ADD_COUNT();
     case kDropped: return L"Dropped" + ADD_COUNT();
     case kPlanToWatch: return L"Plan to watch" + ADD_COUNT();
+    case kForgotten: return L"Forgotten" + ADD_COUNT();
     default: return L"";
   }
   #undef ADD_COUNT

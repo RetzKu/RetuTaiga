@@ -319,6 +319,7 @@ void FeedConditionDialog::ChooseElement(int element_index) {
       value_combo_.AddItem(anime::TranslateMyStatus(anime::kOnHold, false).c_str(), anime::kOnHold);
       value_combo_.AddItem(anime::TranslateMyStatus(anime::kDropped, false).c_str(), anime::kDropped);
       value_combo_.AddItem(anime::TranslateMyStatus(anime::kPlanToWatch, false).c_str(), anime::kPlanToWatch);
+      value_combo_.AddItem(anime::TranslateMyStatus(anime::kForgotten, false).c_str(), anime::kForgotten);
       break;
     case kFeedFilterElement_Episode_Number:
     case kFeedFilterElement_Meta_Episodes:

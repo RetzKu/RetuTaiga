@@ -242,6 +242,7 @@ int TranslateMyStatusFrom(const std::string& value) {
     {"COMPLETED", anime::kCompleted},
     {"DROPPED", anime::kDropped},
     {"PAUSED", anime::kOnHold},
+    {"FORGOTTEN", anime::kForgotten},
   };
 
   const auto it = table.find(value);
@@ -259,6 +260,7 @@ std::string TranslateMyStatusTo(int value) {
     case anime::kOnHold: return "PAUSED";
     case anime::kDropped: return "DROPPED";
     case anime::kPlanToWatch: return "PLANNING";
+    case anime::kForgotten: return "FORGOTTEN";
   }
 
   LOGW(L"Invalid value: {}", value);
