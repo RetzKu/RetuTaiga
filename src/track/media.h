@@ -88,7 +88,8 @@ enum class Stream {
   Wakanim,
   Yahoo,
   Youtube,
-  Masterani,
+  Twist,
+  Aniwatch,
 };
 
 struct StreamData {
